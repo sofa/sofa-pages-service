@@ -1,8 +1,19 @@
 'use strict';
 /* global sofa */
 /**
- * @name PagesService
- * @namespace sofa.PagesService
+ * @sofadoc class
+ * @name sofa.PagesService
+ *
+ * @package sofa-pages-service
+ * @requiresPackage sofa-core
+ * @requiresPackage sofa-http-service
+ * @requiresPackage sofa-q-service
+ *
+ * @requires sofa.HttpService
+ * @requires sofa.QService
+ * @requires sofa.ConfigService
+ *
+ * @distFile dist/sofa.pagesService.js
  *
  * @description
  * This service takes care of accessing static page data.
@@ -15,7 +26,8 @@ sofa.define('sofa.PagesService', function ($http, $q, configService) {
         ABOUT_PAGES  = configService.get('aboutPages');
 
     /**
-     * @method getPage
+     * @sofadoc method
+     * @name sofa.PagesService#getPage
      * @memberof sofa.PagesService
      *
      * @description
@@ -42,7 +54,8 @@ sofa.define('sofa.PagesService', function ($http, $q, configService) {
     };
 
     /**
-     * @method getPageConfig
+     * @sofadoc method
+     * @name sofa.PagesService#getPageConfig
      * @memberof sofa.PagesService
      *
      * @description
