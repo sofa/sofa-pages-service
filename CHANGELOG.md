@@ -1,3 +1,12 @@
+<a name="0.2.0"></a>
+## 0.2.0 (2014-06-24)
+
+
+#### Features
+
+* **grunt:** better deploying ([dbe3a5b9](https://github.com/sofa/sofa-pages-service/commit/dbe3a5b9bbe13b78f13280e262b2243ccf8fb6a0))
+
+
 <a name="0.1.1"></a>
 ### 0.1.1 (2014-04-16)
 
