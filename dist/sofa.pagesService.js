@@ -1,5 +1,5 @@
 /**
- * sofa-pages-service - v0.2.0 - 2014-06-24
+ * sofa-pages-service - v0.3.0 - 2014-08-05
  * 
  *
  * Copyright (c) 2014 CouchCommerce GmbH (http://www.couchcommerce.com / http://www.sofa.io) and other contributors
@@ -11,8 +11,19 @@
 'use strict';
 /* global sofa */
 /**
- * @name PagesService
- * @namespace sofa.PagesService
+ * @sofadoc class
+ * @name sofa.PagesService
+ *
+ * @package sofa-pages-service
+ * @requiresPackage sofa-core
+ * @requiresPackage sofa-http-service
+ * @requiresPackage sofa-q-service
+ *
+ * @requires sofa.HttpService
+ * @requires sofa.QService
+ * @requires sofa.ConfigService
+ *
+ * @distFile dist/sofa.pagesService.js
  *
  * @description
  * This service takes care of accessing static page data.
@@ -25,7 +36,8 @@ sofa.define('sofa.PagesService', function ($http, $q, configService) {
         ABOUT_PAGES  = configService.get('aboutPages');
 
     /**
-     * @method getPage
+     * @sofadoc method
+     * @name sofa.PagesService#getPage
      * @memberof sofa.PagesService
      *
      * @description
@@ -52,7 +64,8 @@ sofa.define('sofa.PagesService', function ($http, $q, configService) {
     };
 
     /**
-     * @method getPageConfig
+     * @sofadoc method
+     * @name sofa.PagesService#getPageConfig
      * @memberof sofa.PagesService
      *
      * @description
