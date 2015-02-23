@@ -1,3 +1,11 @@
+## 0.4.0 (2015-02-23)
+
+
+#### Features
+
+* **sofa.PagesService:** introduces new build + Angular service ([779476c3](https://github.com/sofa/sofa-pages-service/commit/779476c3032a964f0b88e6778ec5fdd1192225a9))
+
+
 <a name="0.4.0"></a>
 ## 0.4.0 (2014-12-09)
 
