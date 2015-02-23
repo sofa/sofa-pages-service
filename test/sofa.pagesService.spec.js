@@ -1,6 +1,5 @@
 'use strict';
 /* global sofa */
-/* global AsyncSpec */
 
 describe('sofa.pagesService', function () {
 
@@ -36,8 +35,7 @@ describe('sofa.pagesService', function () {
 
     describe('sofa.pagesService#getPage', function () {
 
-        var async = new AsyncSpec(this),
-            httpService,
+        var httpService,
             pagesService;
 
 
@@ -50,7 +48,7 @@ describe('sofa.pagesService', function () {
             expect(typeof pagesService.getPage).toBe('function');
         });
 
-        async.it('should fetch page content via http', function (done) {
+        it('should fetch page content via http', function (done) {
 
             httpService.when('get', configService.get('resourceUrl') + 'html/' + id + '.html')
                 .respond({
